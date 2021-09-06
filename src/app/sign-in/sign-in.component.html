@@ -1,0 +1,72 @@
+<div>
+    <div fxLayout="row wrap">
+        <!-- column -->
+        <div fxFlex.gt-lg="50" fxFlex.gt-md="50" fxFlex.gt-xs="50" fxFlex="50">
+            <div>
+                <mat-card class="login-card">
+                    <mat-card-content>
+                        <mat-card-title class="login-card-title">Iniciar sesión</mat-card-title>
+                        <form class="basic-form">
+                            <div fxLayout="row wrap">
+                                <!-- column -->
+                                <div fxFlex.gt-sm="100" fxFlex="100">
+                                    <mat-form-field appearance="outline">
+                                        <mat-label>Correo electrónico</mat-label>
+                                        <input [(ngModel)]="emailLogin" name="emailLogin" matInput #input placeholder="example@example.com">
+                                    </mat-form-field>
+                                </div>
+                                <!-- column -->
+                                <div fxFlex.gt-sm="100" fxFlex="100">
+                                    <mat-form-field appearance="outline">
+                                        <mat-label>Contraseña</mat-label>
+                                        <input [(ngModel)]="passwordLogin" name="passwordLogin" matInput #input type="password">
+                                    </mat-form-field>
+                                </div>
+
+                                <!-- column -->
+                                <div fxFlex.gt-sm="100" fxFlex="100">
+                                    <button (click)="loginUser()" mat-raised-button color="primary">Iniciar sesión</button>
+                                </div>
+                            </div>
+                        </form>
+                    </mat-card-content>
+                </mat-card>
+            </div>
+        </div>
+        <!-- column -->
+        <!-- column -->
+        <div fxFlex.gt-lg="50" fxFlex.gt-md="50" fxFlex.gt-xs="50" fxFlex="50">
+            <div>
+                <mat-card class="login-card">
+                    <mat-card-content>
+                        <mat-card-title class="login-card-title">Registrarse</mat-card-title>
+                        <form class="basic-form">
+                            <div fxLayout="row wrap">
+                                <!-- column -->
+                                <div fxFlex.gt-sm="100" fxFlex="100">
+                                    <mat-form-field appearance="outline">
+                                        <mat-label>Correo electrónico</mat-label>
+                                        <input [(ngModel)]="emailRegister" name="emailRegister" matInput #input placeholder="example@example.com">
+                                    </mat-form-field>
+                                </div>
+                                <!-- column -->
+                                <div fxFlex.gt-sm="100" fxFlex="100">
+                                    <mat-form-field appearance="outline">
+                                        <mat-label>Contraseña</mat-label>
+                                        <input [(ngModel)]="passwordRegister" name="passwordRegister" matInput #input type="password">
+                                    </mat-form-field>
+                                </div>
+
+                                <!-- column -->
+                                <div fxFlex.gt-sm="100" fxFlex="100">
+                                    <button (click)="registerUser()" mat-raised-button color="primary">Registrarse</button>
+                                </div>
+                            </div>
+                        </form>
+                    </mat-card-content>
+                </mat-card>
+            </div>
+        </div>
+        <!-- column -->
+    </div>
+</div>
