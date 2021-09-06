@@ -40,6 +40,7 @@
  import { MatBadgeModule } from '@angular/material/badge';
  import { MatNativeDateModule, MatRippleModule } from '@angular/material/core';
  import { MatBottomSheetModule } from '@angular/material/bottom-sheet';
+ import { CarouselModule, WavesModule } from 'angular-bootstrap-md'
  
  /**
   * NgModule that includes all Material modules that are required to serve the demo-app.
@@ -79,7 +80,9 @@
          MatTabsModule,
          MatToolbarModule,
          MatTooltipModule,
-         MatNativeDateModule
+         MatNativeDateModule,
+         CarouselModule,
+         WavesModule
      ]
  })
  export class MaterialModule { }

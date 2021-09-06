@@ -48,12 +48,12 @@ COLOR PALETTE
 *********************************/
 
 :root {
-    --main-color:#F8DBF7;
-	--button-color:#D7BAE0;
+    --main-color:#FAAD0F;
+	--button-color:#F6771C;
 	--text-color:#525352;
-	--third-color: #FCD2D2;
-	--fourth-color: #E0BACC;
-	--fifth-color: #E6D2FC;
+	--third-color: #DE830D;
+	--fourth-color: #DE460D;
+	--fifth-color: #FA2C0F;
 }
 
 *
@@ -822,7 +822,7 @@ section
 }
 .logo_container a span
 {
-	color: #D7BAE0;
+	color: var(--main-color);
 }
 
 /*********************************
@@ -1533,6 +1533,18 @@ section
 {
 	color: #FE7C7F;
 }
+
+/*********************************
+10. Mapsection
+*********************************/
+
+.mapsection
+{
+	width: 100%;
+	background: #f2f2f2;
+	margin-top: 81px;
+}
+
 
 /*********************************
 10. Newsletter
